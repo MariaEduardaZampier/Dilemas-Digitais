@@ -4,20 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Blog</title>
+    <title>Dilemas Digitais & Soluções</title>
     <style>
+        body {
+            background-color: #f4f6f9;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
         header {
             background-color: #183C63;
             color: #FFFFFF;
             text-align: center;
-            max-width: 800px;
+            padding: 20px;
             margin-bottom: 30px;
-            margin: 0 auto;
-        }
-
-        body {
-            background-color: "yellow";
-
         }
 
         main {
@@ -25,38 +26,70 @@
             color: #183C63;
             display: flex;
             align-items: center;
+            padding: 30px 0;
             margin-bottom: 30px;
             flex-direction: column;
             gap: 20px;
         }
 
-        img {
-            width: 80px;
-            height: 80px;
-        }
-
-        div p {
-            font-weight: bold;
-        }
-
-        .artigo-autor {
-            font-weight: bold;
-        }
-
-        .imagem {
-            width: 200px;
-            height: 200px;
-        }
-
-        article {
+        article, section.quiz {
             display: flex;
             justify-content: space-between;
             align-items: center;
             background-color: white;
             padding: 20px;
             border-radius: 10px;
-            width: 90%;
+            width: 80%;
+            max-width: 800px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
 
+        section.quiz {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .conteudo-texto {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .icone {
+            width: 40px;
+            height: 40px;
+            vertical-align: middle;
+        }
+
+        .imagem {
+            width: 200px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+            color: #555;
+            font-size: 0.9em;
+        }
+
+        button {
+            background-color: #183C63;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0f2844;
+        }
+
+        .quiz-opcao {
+            display: block;
+            margin: 8px 0;
         }
 
         footer {
@@ -70,102 +103,118 @@
 
 <body>
     <header>
-        <h1>Meu blog tech</h1>
-        <p>Vou compartilhar conhecimentos sobre tecnologia e programação</p>
-        <button>❤️<span>0</span></button>
-        <button>👍<span>0</span></button>
-
+        <h1>Dilemas Digitais & Soluções</h1>
+        <p>Navegando pelos desafios do mundo conectado e encontrando caminhos saudáveis</p>
     </header>
+
     <main>
         <article>
-            <div>
-                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
-                <h2>Meu primeiro post</h2>
+            <div class="conteudo-texto">
+                <h2>1. Ansiedade por Conectividade (FOMO)</h2>
                 <p class="artigo-autor">Por: Alexandra</p>
-                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
-                    tecnologia.</p>
-                <button>❤️<span>0</span></button>
-                <button>👎<span>0</span></button>
+                <p>O medo de estar perdendo algo gera uso compulsivo das redes sociais e estresse constante.</p>
+                <p><strong>Solução:</strong> Pratique o JOMO (Joy of Missing Out). Defina horários específicos para checar notificações e estabeleça momentos do dia 100% desconectados.</p>
+                <button class="btn-curtir">❤️ <span>0</span></button>
+                <button class="btn-curtir">👍 <span>0</span></button>
             </div>
             <div>
-                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=300" alt="Pessoa olhando para o celular" class="imagem">
             </div>
         </article>
 
-    </main>
-    <main>
         <article>
-            <div>
-                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
-                <h2>Meu primeiro post</h2>
+            <div class="conteudo-texto">
+                <h2>2. Bullying Virtual e Discurso de Ódio</h2>
                 <p class="artigo-autor">Por: Alexandra</p>
-                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
-                    tecnologia.</p>
-                <button>❤️<span>0</span></button>
-                <button>👎<span>0</span></button>
+                <p>A sensação de anonimato na internet amplia ataques e comportamentos tóxicos em redes sociais.</p>
+                <p><strong>Solução:</strong> Promova a empatia digital, utilize ferramentas de bloqueio/denúncia e nunca alimente discussões agressivas. Denuncie abusos às plataformas.</p>
+                <button class="btn-curtir">❤️ <span>0</span></button>
+                <button class="btn-curtir">👍 <span>0</span></button>
             </div>
             <div>
-                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+                <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=300" alt="Segurança digital e proteção" class="imagem">
             </div>
+        </article>
 
-        </article>
-    </main>
-    <main>
         <article>
-            <div>
-                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
-                <h2>Meu primeiro post</h2>
+            <div class="conteudo-texto">
+                <h2>3. Sobrecarga de Informação e Fake News</h2>
                 <p class="artigo-autor">Por: Alexandra</p>
-                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
-                    tecnologia.</p>
-                <button>❤️<span>0</span></button>
-                <button>👎<span>0</span></button>
+                <p>O excesso de dados não checados dificulta a identificação de fatos reais e gera desinformação.</p>
+                <p><strong>Solução:</strong> Desenvolva o pensamento crítico. Verifique a fonte antes de compartilhar, busque veículos de checagem e limite os canais de notícias.</p>
+                <button class="btn-curtir">❤️ <span>0</span></button>
+                <button class="btn-curtir">👍 <span>0</span></button>
             </div>
             <div>
-                <img src="anupam-raisim-kerketta-2RUSOSHt7wQ-unsplash.svg" class="imagem">
+                <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c?w=300" alt="Jornais e tecnologia" class="imagem">
             </div>
         </article>
-    </main>
-    <main>
-        <article>
-            <div>
-                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia">
-                <h2>Meu primeiro post</h2>
-                <p class="artigo-autor">Por: Alexandra</p>
-                <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de
-                    tecnologia.</p>
-                <button>❤️<span>0</span></button>
-                <button>👎<span>0</span></button>
-            </div>
-            <div>
-                <img src="imagem-blog.png" alt="livro com símbolos de tecnologia" class="imagem">
-            </div>
-        </article>
+
+        <section class="quiz">
+            <h2>Quiz: Como está sua Saúde Digital?</h2>
+            <p>Qual é a sua primeira atitude ao acordar?</p>
+            <label class="quiz-opcao">
+                <input type="radio" name="q1" value="a"> Pego o celular imediatamente para ver notificações.
+            </label>
+            <label class="quiz-opcao">
+                <input type="radio" name="q1" value="b"> Levanto, tomo café e só depois checo as mensagens.
+            </label>
+            <label class="quiz-opcao">
+                <input type="radio" name="q1" value="c"> Deixo o celular em outro cômodo durante a noite.
+            </label>
+            <button id="btn-quiz">Enviar Resposta</button>
+            <p id="resultado-quiz"></p>
+        </section>
     </main>
 
     <footer>
-        <p> 2026 Meu Blog Tech | Desenvolvido por Alexandra</p>
+        <p>© 2026 Dilemas Digitais | Desenvolvido por Alexandra</p>
     </footer>
 
     <script>
-        const botoes = document.querySelectorAll("button");
-        botoes.forEach(function (botao) {
+        // Lógica dos botões de interatividade
+        const botoesCurtir = document.querySelectorAll(".btn-curtir");
+        botoesCurtir.forEach(function (botao) {
             let curtiu = false;
-            botao.addEventListener("click", botaoClicado);
-            function botaoClicado() {
-                console.log("fui clicado");
+            botao.addEventListener("click", function () {
                 let texto = botao.querySelector("span");
-                if (curtiu === false) {
-                    texto.textContent++;
+                if (!curtiu) {
+                    texto.textContent = parseInt(texto.textContent) + 1;
                     curtiu = true;
                 } else {
-                    texto.textContent--;
+                    texto.textContent = parseInt(texto.textContent) - 1;
                     curtiu = false;
                 }
-            }
-        })
-    </script>
+            });
+        });
 
+        // Lógica do Quiz
+        document.getElementById("btn-quiz").addEventListener("click", function () {
+            const opcoes = document.getElementsByName("q1");
+            let selecionado = false;
+            let resposta = "";
+
+            for (const opcao of opcoes) {
+                if (opcao.checked) {
+                    selecionado = true;
+                    resposta = opcao.value;
+                    break;
+                }
+            }
+
+            const resultado = document.getElementById("resultado-quiz");
+            if (!selecionado) {
+                resultado.textContent = "Por favor, selecione uma opção!";
+                resultado.style.color = "red";
+            } else if (resposta === "a") {
+                resultado.textContent = "Atenção: Tente criar momentos livres de telas no início do dia!";
+                resultado.style.color = "orange";
+            } else {
+                resultado.textContent = "Parabéns! Você mantém uma relação equilibrada com a tecnologia.";
+                resultado.style.color = "green";
+            }
+        });
+    </script>
 </body>
 
 </html>
